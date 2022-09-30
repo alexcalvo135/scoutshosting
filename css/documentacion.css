@@ -1,0 +1,28 @@
+h5{
+    text-align: center;
+}
+#doc{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px 20px;
+    margin-bottom: 40px;
+}
+.descripcion{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+}
+.descripcion a{
+    font-size: 20px;
+    color: white
+}
+.pdf{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+}
+.descarga img{
+    width:70px;
+}

@@ -1,0 +1,38 @@
+.texto{
+    padding:0 0 0 100px;
+}
+.imagenes{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main img{
+    width: 700px;
+}
+p{
+    text-align:justify
+}
+.tiras{
+    margin:20px 0;
+}
+
+.tira{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tira img{
+    width:700px;
+    height: 150px;
+}
+#tira1{
+    padding-left: 100px;
+}
+#tira1>img{
+    width: 744px;
+}
+#tira2{
+    padding-right: 0;
+}

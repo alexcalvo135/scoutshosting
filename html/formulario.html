@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="icon" href="../img/minilogo.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--jQuery-->
+    <script src="../scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <title>SCOUTS TIERRA DEL FUEGO 362</title>
+  </head>
+
+  <body>
+
+    <!--CABECERA--->
+    <header class="header">
+      <div id="logogrupo"><img class="header-img" href="#"  src="../img/logogrupo.png" /></div>
+      <div class="header-title">GRUPO SCOUT TIERRA DEL FUEGO</div>       
+      <div id="flor"><img class="header-img" src="../img/flordelis.png"></div>
+    </header>
+
+    <!--MENU--->
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg nav-bar-color">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100 justify-content-around">
+
+            <!--PAGINA DE INICIO--->
+            <li class="nav-item active">
+              <a class="nav-link rounded" href="index.html">
+                INICIO <span class="sr-only">(current)</span></a>
+            </li>
+
+            <!--QUIENES SOMOS (DESPLEGABLE)--->
+            <li class="nav-item dropdown">
+              <a class="nav-link rounded" href="historia.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ¿QUIÉNES SOMOS?
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="historia.html">HISTORIA</a>
+                <a class="dropdown-item" href="mundoscout.html">MUNDO SCOUT</a>
+                <a class="dropdown-item" href="secciones.html">SECCIONES</a>
+                <a class="dropdown-item" href="funcionamiento.html">¿CÓMO FUNCIONAMOS?</a>
+              </div>
+            </li>
+            
+            <!--QUE HACEMOS (DESPLEGABLE)--->
+            <li class="nav-item dropdown">
+              <a class="nav-link rounded" href="campateca.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ¿QUÉ HACEMOS?
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="reuniones.html">REUNIONES</a>                    
+                <a class="dropdown-item" href="metodologia.html">METODOLOGÍA</a>
+                <a class="dropdown-item" href="campateca.html">CAMPATECA</a>
+              </div>
+            </li>
+
+            <!--RECURSOS (DESPLEGABLE)--->
+            <li class="nav-item dropdown">
+              <a class="nav-link rounded" href="uniformidad.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                RECURSOS
+              </a>
+              <div class="dropdown-menu"aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="uniformidad.html">UNIFORMIDAD</a>
+                <a class="dropdown-item" href="documentacion.html">DOCUMENTACIÓN</a>
+                <a class="dropdown-item" href="becas.html">BECAS</a>
+              </div>
+            </li>
+            
+            <!--INSCRIPCION--->
+            <li class="nav-item active">
+              <a class="nav-link rounded" href="formulario.html">
+                INSCRIPCIÓN <span class="sr-only">(current)</span></a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+   
+    <!--MAIN-->
+    <main>
+    
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" >
+                    <br><h1 id="center">Formulario de INSCRIPCIÓN</h1>
+                </div>
+            </div>
+            <div class="row">                  
+                <div class="col-12">
+                    <form action="recibiendo.html">
+
+                        <label for="nombre">Nombre y apellidos</label><br>
+                        <input type="text" id="contac" name="nombrecompleto" placeholder="Nombre, apellidos" required><br>
+    
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="contac" name="email" placeholder="E-mail" required><br>
+                        
+                        <label for="telefono">Teléfono de contacto</label><br>
+                        <input type="number" id="contac" name="telefono" placeholder="Teléfono" required><br>
+                        
+                        <label for="provincia">Provincia</label><br>
+                        <input type="text" id="contac" name="lastname" placeholder="Provincia" required><br>
+                        
+                        <label for="localidad">Localidad</label><br>
+                        <input type="text" id="contac" name="lastname" placeholder="Localidad" required><br>
+    
+                        <br>MENSAJE<br>
+                        <hr id="linea">
+                        <label for="Asunto">Asunto</label><br>
+                        <select id="contac" name="asunto" required>
+                          <option value="animal">¿Qué necesitas?</option>
+                          <option value="contacto">Contactar con nosotros para obtener información</option>
+                          <option value="usa">Ser voluntario </option>
+                        </select>
+    
+                        <br><label for="mensaje">Mensaje</label><br>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe.." required></textarea><br>
+    
+                        <input type="submit" value="Enviar">
+    
+                      </form>
+                    <div id="confirmar"class="row">                        
+                        <div class="col-1"></div>
+                        <div class="col-3" id="aceptar">
+                            Acepto términos de uso
+                            <input type="checkbox">
+                        </div>
+                        <div class="col-3" id="aceptar">
+                            Acepto las condiciones de privacidad
+                            <input type="checkbox">
+                        </div>
+                        <div class="col-4" id="enviar">
+                            <button type="submit">ENVIAR</button>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                    
+                </div>                                          
+            </div>       
+            <br><br>
+        </div>
+    </div>
+    </main>
+    
+    <!--FOOTER-->
+    <footer>
+      <div id="footer-logo"><img href="#"  src="../img/logoGrupoBlanco.png" /></div>
+      <div class="footer-socials">
+        <div><a href="mailto:gruposcout362@gmail.com">gruposcout362@gmail.com</a></div>
+        <div><a href="https://www.google.com/maps/place/Grupo+Scout+362,+Tierra+del+Fuego/@40.4022705,-3.6981395,16z/data=!4m5!3m4!1s0x0:0x8ffa55668768ac4a!8m2!3d40.4002241!4d-3.7027403">
+           C/ Arquitectura, 3, 28005, Madrid </a></div>
+        <div><a href="https://www.scout.es/">ASDE (Asociación de Scouts de España)</a></div>
+      </div>       
+      <div class="footer-image"><a href="https://www.facebook.com/GrupoScout362TierraDelFuego/"><img src="../img/logo_fb.png" /></a></div>
+      <div class="footer-image"><a href="https://www.instagram.com/362tierradelfuego/"><img src="../img/logo_insta.png" /></a></div>
+    </footer>
+
+  </body>
+</html>
+      
+  
+

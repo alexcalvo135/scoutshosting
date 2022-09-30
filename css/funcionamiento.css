@@ -1,0 +1,16 @@
+main img{
+    width:80%;
+}
+.center{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#cargos{
+    width:60%;
+}
+p{
+    text-align: justify;
+}
